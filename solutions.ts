@@ -88,3 +88,15 @@ const student = new Student("Alice", 20, "A");
 student.getDetails();
 
 // problem 7:
+
+const getIntersection = (arr1: number[], arr2: number[]): number[] => {
+  let lstArr: number[] = [];
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr2.includes(arr1[i])) {
+      lstArr.push(arr1[i]);
+    }
+  }
+  return lstArr;
+};
+// Sample Input:
+getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
