@@ -3,7 +3,7 @@ const filterEvenNumbers = (arr: number[]): number[] => {
   const newArr: number[] = arr.filter((num) => num % 2 === 0);
   return newArr;
 };
-
+// Sample Input:
 filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
 // problem 2:
@@ -15,7 +15,7 @@ const reverseString = (inp: string): string => {
 
   return newStr;
 };
-
+// Sample Input:
 reverseString("typescript");
 
 // problem 3:
@@ -28,11 +28,15 @@ const checkType = (str: StringOrNumber) => {
     return "Number";
   }
 };
-
-// Sample Input 1:
+// Sample Input:
 checkType("Hello");
-
-// Sample Input 2:
 checkType(42);
 
+// problem 4:
+const getProperty = <x>(obj: x, key: keyof x) => {
+  return obj[key];
+};
 
+// Sample Input:
+const user = { id: 1, name: "John Doe", age: 21 };
+getProperty(user, "name");
