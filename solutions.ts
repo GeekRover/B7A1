@@ -40,3 +40,26 @@ const getProperty = <x>(obj: x, key: keyof x) => {
 // Sample Input:
 const user = { id: 1, name: "John Doe", age: 21 };
 getProperty(user, "name");
+
+// problem 5:
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+
+const toggleReadStatus = (obj : Book) => {
+  
+}
+
+// Sample Input:
+const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
+toggleReadStatus(myBook);
+
+// Sample Output:
+// {
+//   title: "TypeScript Guide",
+//   author: "Jane Doe",
+//   publishedYear: 2024,
+//   isRead: true
+// }
