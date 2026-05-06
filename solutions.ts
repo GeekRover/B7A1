@@ -48,18 +48,18 @@ interface Book {
   publishedYear: number;
 }
 
-const toggleReadStatus = (obj : Book) => {
-  
-}
+const toggleReadStatus = (obj: Book) => {
+  return { ...obj, isRead: true };
+};
 
 // Sample Input:
-const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
+const myBook = {
+  title: "TypeScript Guide",
+  author: "Jane Doe",
+  publishedYear: 2024,
+};
 toggleReadStatus(myBook);
 
-// Sample Output:
-// {
-//   title: "TypeScript Guide",
-//   author: "Jane Doe",
-//   publishedYear: 2024,
-//   isRead: true
-// }
+
+// problem 6:
+
