@@ -161,7 +161,7 @@ function safeProcess(input: unknown) {
 
 ## Conclusion
 
-| বিষয়                        | `any`   | `unknown` |
+| Subject                      | `any`   | `unknown` |
 | ---------------------------- | ------- | --------- |
 | Type check                   | ❌ No   | ✅ Yes    |
 | Type-safe?                   | ❌ No   | ✅ Yes    |
@@ -169,5 +169,3 @@ function safeProcess(input: unknown) {
 | Risk of runtime crash        | ⚠️ High | ✅ less   |
 
 To sum up, **`any`** type is a safety hole in Typescripts type system which leads to many runtime errors and bugs. On the other hand, **`unknown`** lets us use any data type but it makes us confirm the data type before using it. And **Type Narrowing** is a tool which lets us tell Typescript where to use which type of data.
-
-
